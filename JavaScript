@@ -1,0 +1,68 @@
+//varaibles to help with the clicks 
+var clicked = false;
+var operation = ""; 
+//sees which two digits are inputd 
+var input = []; 
+//varaible for result 
+var result = 0; 
+//clearing function 
+function AC(){
+ document.getElementById("answer").innerHTML="Answer Goes Here";
+}
+//push the input on to the list 
+function one(){
+  input.push(1); 
+}
+function two(){
+  input.push(2); 
+}
+function three(){
+  input.push(3); 
+}
+function four(){
+  input.push(4); 
+}
+function five(){
+  input.push(5); 
+}
+function six(){
+  input.push(6); 
+}
+function seven(){
+  input.push(7); 
+}
+function eight(){
+  input.push(8); 
+}
+function nine(){
+  input.push(9); 
+}
+function divide(){
+  operation = "/"; 
+}
+function multiply(){
+  operation = "X"; 
+}
+function subtract(){
+  operation = "-"; 
+}
+function addition(){
+  operation = "+"; 
+}
+function equal(){
+  if (clicked == false){
+    if (operation == "+"){
+      result = input[0]+input[1]; 
+    }
+      if (operation == "-"){
+      result = input[0]-input[1]; 
+    }
+      if (operation == "X"){
+      result = input[0]*input[1]; 
+    }
+      if (operation == "/"){
+      result = input[0]/input[1]; 
+    }
+ document.getElementById("answer").innerHTML=result;
+  }
+}
