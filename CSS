@@ -1,0 +1,15 @@
+.button{
+  padding: 5px 10px; 
+  width: 100px; 
+  background-color: #00061a; 
+}
+#answer{
+  font-size: 32pt; 
+}
+body{
+  background-color: #0040ff;
+  color: #ffffff; 
+}
+h1{
+   font-color: #ffffff; 
+}
